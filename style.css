@@ -22,6 +22,11 @@ body {
     color: #ff4081;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
+
+  .letra{
+    font-size: 100px;
+    height: 150px;
+  }
   
   #character {
     position: absolute;
