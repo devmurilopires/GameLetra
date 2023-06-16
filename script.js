@@ -1,7 +1,7 @@
 // script.js
 
 var currentLetterIndex = 0;
-var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var audioElement = null;
 
 function startGame() {
@@ -11,7 +11,10 @@ function startGame() {
 
 function generateLetter() {
   var letterBox = document.getElementById("letter-box");
-  letterBox.innerHTML = letters[currentLetterIndex];
+  var letterImage = document.createElement("img");
+  letterImage.src = "letras/" + letters[currentLetterIndex].toLowerCase() + ".png";
+  letterBox.innerHTML = "";
+  letterBox.appendChild(letterImage);
 
   // Inicializar o elemento de áudio
   var audioFile = "audio/" + letters[currentLetterIndex].toLowerCase() + ".mp3";
