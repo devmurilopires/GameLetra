@@ -2,16 +2,33 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Mini Game - Letras </title>
+  <title>Mini Game - Números</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="./assets/img/scea-logo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
   <div class="container">
+    <div class="title">
+      <img src="assets/img/scea-logo.png" alt="Logo da SCEA">
+      <h1>SCEA</h1>
+    </div>
     <div id="character" class="letter-image"></div>
-    <h1>Se divirta aprendendo o alfabeto!</h1>
-    <p>Clique para iniciar!</p>
-    <button onclick="startGame()">Iniciar</button>
+    <div id="character"></div>
+    <h1 id="title">Se divirta aprendendo as letras!</h1>
+    <div class="start">
+      <p>Clique para iniciar!</p>
+      <button id="start" onclick="startGame()"><i class="bi bi-play-fill"></i> INICIAR </button>
+    </div>
     <div id="game" style="display: none;">
       <h2>Adivinhe a Letra</h2>
       <div class="letra" id="letter-box"></div>
