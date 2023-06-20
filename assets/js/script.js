@@ -12,12 +12,12 @@ function startGame() {
 function generateLetter() {
   var letterBox = document.getElementById("letter-box");
   var letterImage = document.createElement("img");
-  letterImage.src = "letras/" + letters[currentLetterIndex].toLowerCase() + ".png";
+  letterImage.src = "./assets/letras/" + letters[currentLetterIndex].toLowerCase() + ".png";
   letterBox.innerHTML = "";
   letterBox.appendChild(letterImage);
 
   // Inicializar o elemento de áudio
-  var audioFile = "audio/" + letters[currentLetterIndex].toLowerCase() + ".mp3";
+  var audioFile = "./assets/audio/" + letters[currentLetterIndex].toLowerCase() + ".mp3";
   audioElement = new Audio(audioFile);
 }
 
